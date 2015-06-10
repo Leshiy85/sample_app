@@ -16,9 +16,6 @@ describe User do
   it { should respond_to(:password_confirmation) }
 
   it { should be_valid }
-      .
-      .
-      .
       describe "when password is not present" do
     before do
       @user = User.new(name: "Example User", email: "user@example.com",
