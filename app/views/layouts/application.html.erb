@@ -7,10 +7,13 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
+  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?sensor=true" %>
 </head>
 <body>
+
 <%= render 'layouts/header' %>
 <div class="container">
+  <script type="text/javascript" src="/admin/gmap3.min.js"></script>
   <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
   <% end %>
